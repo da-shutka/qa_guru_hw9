@@ -1,0 +1,31 @@
+{
+  "id": "42457",
+  "self": "https://jira.net/rest/api/2/issue/42457",
+  "key": "BE-623",
+  "fields": {
+    "issuelinks": [
+      {
+        "id": "19323",
+        "self": "https://jira.net/rest/api/2/issueLink/19323",
+        "type": {
+          "id": "10300",
+          "name": "Blocks",
+          "inward": "is blocked by",
+          "outward": "blocks",
+          "self": "https://jira.net/rest/api/2/issueLinkType/10300"
+        }
+      },
+      {
+        "id": "26548",
+        "self": "https://jira.net/rest/api/2/issueLink/26548",
+        "type": {
+          "id": "49855",
+          "name": "Depends on",
+          "inward": "is depend on",
+          "outward": "depends on",
+          "self": "https://jira.net/rest/api/2/issueLinkType/49855"
+        }
+      }
+    ]
+  }
+}
