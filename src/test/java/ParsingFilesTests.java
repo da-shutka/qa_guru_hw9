@@ -17,7 +17,7 @@ import java.util.zip.ZipInputStream;
 
 public class ParsingFilesTests {
 
-    private ClassLoader cl = ParsingFilesTests.class.getClassLoader();
+    private final ClassLoader cl = ParsingFilesTests.class.getClassLoader();
 
     @Test
     @DisplayName("Проверка содержимого CSV файла в ZIP архиве")
@@ -132,7 +132,7 @@ public class ParsingFilesTests {
     @Test
     @DisplayName("Проверка содержимого JSON файла")
     void checkContentOfJsonFileTest() throws Exception {
-        JiraTicket ticket = null;
+        JiraTicket ticket;
         try (InputStream is = cl.getResourceAsStream("BE-623.json")
         ) {
             ObjectMapper objectMapper = new ObjectMapper();
